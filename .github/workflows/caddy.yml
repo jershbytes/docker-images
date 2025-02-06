@@ -35,6 +35,7 @@ jobs:
               with:
                 context: ./caddy
                 push: true
+                platforms: linux/amd64,linux/arm64,linux/arm/v7
                 tags: |
                   ghcr.io/${{ github.repository_owner }}/caddy-cloudflare:latest
                   ghcr.io/${{ github.repository_owner }}/caddy-cloudflare:${{ github.sha }}
